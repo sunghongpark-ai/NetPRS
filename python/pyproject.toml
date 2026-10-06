@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "netprs"
+version = "2.0.0"
+description = "NetPRS: SNP interaction aware network-based polygenic risk score (Python version of the MATLAB code)"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [{ name = "Sunghong Park" }]
+keywords = ["polygenic risk score", "Alzheimer's disease", "SNP interaction network", "graph-based semi-supervised learning"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+]
+dependencies = ["numpy>=1.21", "scipy>=1.8"]
+
+[project.optional-dependencies]
+test = ["pytest>=7", "statsmodels>=0.13", "scikit-learn>=1.0"]
+
+[project.urls]
+Paper = "https://doi.org/10.1109/BHI62660.2024.10913658"
+
+[tool.setuptools]
+packages = ["netprs"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
