@@ -1,8 +1,0 @@
-# outputs of run_netprs.py and of the test/build tools
-result/
-__pycache__/
-*.egg-info/
-build/
-dist/
-.pytest_cache/
-.ruff_cache/
